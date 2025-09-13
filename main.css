@@ -1,0 +1,32 @@
+html {
+    font-size: 18px;
+}
+
+a
+{
+    color: red;
+}
+
+#Link1
+{
+    color: whitesmoke;
+}
+
+img
+{
+    width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+a:hover, a:active
+{
+    color: blue;
+}
+
+button
+{
+    padding: 8px;
+    background-color: grey;
+}
+
