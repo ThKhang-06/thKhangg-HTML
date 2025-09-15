@@ -12,7 +12,30 @@ a
     color: whitesmoke;
 }
 
-img
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#FirstImage
+{
+    width: 300px;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#SecondImage
+{
+    width: 300px;
+    display: inline-block;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#ThirdImage
 {
     width: 1000px;
     display: block;
@@ -28,5 +51,36 @@ button
 {
     padding: 8px;
     background-color: grey;
+}
+
+#FourthImage
+{
+    display: block;
+    left: 0;
+    margin-left: 0;
+    margin-right: auto;
+    width: 300px;
+}
+
+label
+{
+    font-weight: bold;
+    color: darkgreen;
+    font-style: inherit;
+}
+
+#emai, #username, #password, #number, #Age
+{
+    font-size: 15px;
+    color: blue;
+    font-style: oblique;
+}
+
+#submit
+{
+    font-size: large;
+    background-color: grey;
+    color: white;
+    font-style: italic;
 }
 

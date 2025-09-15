@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#HTML">Learning HTML</a></li>
-            <li><a href="#Vacation">Vacation</a></li>
-        </ul>
-    </nav>
-    <section id="Introdcution">
-        <h1>
-            Hello World!
-        </h1>
-        <p>Do want to know what am I?</p>
-        <ul>
-            <li>Dowload my <a href="download.jpg" download><b>Photo</b></a></li> <br>
-            <li>Mail me at: <a href="mailto:khangok006@email.com"> <strong>My Email</strong> </a></li> <br>
-            <li>Phone me at: <a href="tel:+84374726829"><b>My Number</b> </a></li> <br>
-            <li>Open <a href="https://www.google.com/?hl=vi" target="_blank"><strong>Google</strong></a> in a new tab!</li>
-        </ul>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#HTML">Learning HTML</a></li>
+                <li><a href="#Vacation">Vacation</a></li>
+            </ul>
+        </nav>
+        <section id="Introdcution">
+            <h1>
+                Hello World!
+            </h1>
+            <p>Do want to know what am I?</p>
+            <ul>
+                <li>Dowload my <a href="download.jpg" download><b>Photo</b></a></li> <br>
+                <li>Mail me at: <a href="mailto:khangok006@email.com"> <strong>My Email</strong> </a></li> <br>
+                <li>Phone me at: <a href="tel:+84374726829"><b>My Number</b> </a></li> <br>
+                <li>Open <a href="https://www.google.com/?hl=vi" target="_blank"><strong>Google</strong></a> in a new tab!</li>
+            </ul>
+    </header>
         <hr>
         <h2>
             I'm Ready to Learn HTML
@@ -31,78 +33,132 @@
         <p>
             This is my first web page
         </p>
-        
-        <img src="https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTY4MDk3LzE3NTYxNDgxMjEtTUROXy1fQUlSZXZvbHV0aW9uLUxpZ2h0LTE5NDB4NTAwLnBuZw%3D%3D.d405ayArmuYff9z5nShfZ57cowrCFsLpu2nA3li5Vz8%3D" alt="Background immage">
+        <div class="container">
+            <img src="img/POSTER.jpg" alt="First Image" id="FirstImage" title="Poster Image" loading="lazy">
+            <img src="img/Kai Matthiesen - typo_graphic posters.jpg" alt="ImportantImage" id="SecondImage" title="Poster Image" loading="lazy">
+        </div>
+        <img src="https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTY4MDk3LzE3NTYxNDgxMjEtTUROXy1fQUlSZXZvbHV0aW9uLUxpZ2h0LTE5NDB4NTAwLnBuZw%3D%3D.d405ayArmuYff9z5nShfZ57cowrCFsLpu2nA3li5Vz8%3D" alt="Background immage" id="ThirdImage" title="BackgroundImage">
         <h3>
             My Daily Schedule
         </h3>
-        <span>
-            Let me tell you how:
-        </span>
-        <p>
-            <br>&nbsp;&nbsp;&nbsp;..I learn more about web dev.
-            <br>&nbsp;&nbsp;&nbsp;...I plan out my schedule.
-            <br>&nbsp;&nbsp;&nbsp;...I use resource from <abbr title="Mozilla Developer Networks">
-                <a href="https://developer.mozilla.org/en-US/">MDN</a>
-            </abbr>
-        </p>
+        <details>
+            <summary> Let me tell you how:</summary>
+                <p>
+                    <br>&nbsp;&nbsp;&nbsp;..I learn more about web dev.
+                    <br>&nbsp;&nbsp;&nbsp;...I plan out my schedule.
+                    <br>&nbsp;&nbsp;&nbsp;...I use resource from <abbr title="Mozilla Developer Networks">
+                        <a href="https://developer.mozilla.org/en-US/">MDN</a>
+                    </abbr>
+                </p>
+        </details>
+
     </section>
     <hr>
-    <section id="Vacation">
-        <h1>
-            I Am Also Planning A Vacation
-        </h1>
-        <span>
-            I've been working hard and <em>really nead a gateway.</em>
-        </span>
-        <span>
-            I live in <abbr title="Dong Nai">DN</abbr> so I want to visit a beach.
-        </span>
-        <h2>
-            The place I'd like to visit.
-        </h2>
-        <span>
-            I've heard good things about Caribean.
-        </span>
-        <p>
-            I've heard about good things here: 
-        </p>
-        <table>
-            <tr>
-                <td>
-                    <address>
-                        My address: 4A Alley, Group 5, Block 3A, Trang Dai Ward, Bien Hoa City, Dong Nai Province <br>
-                        Number: +84 374 726 829 <br>
-                        Contact: <a href="https://www.notion.so/Schedule-220aaf4ff44a8050b13ce6942474637d">Facebook</a> <br>
-                    </address>
-                </td>
-            </tr>
-        </table>
-        <h2>
-            Place I want to Avoid.
-        </h2>
-        <span>
-            Any where cold. No way!
-        </span>
-    </section>
+    <main>
+        <section id="Vacation">
+            <h1>
+                I Am Also Planning A Vacation
+            </h1>
+            <span>
+                I've been working hard and <em>really nead a gateway.</em>
+            </span>
+            <span>
+                I live in <abbr title="Dong Nai">DN</abbr> so I want to visit a beach.
+            </span>
+            <figure>
+                <div class="container2">
+                    <img src="img/download1.jpg" alt="Background2" title="This is a picture of window
+                        in the evening" loading="lazy" id="FourthImage">
+                </div>
+                <figcaption>
+                    A window in the evening!
+                </figcaption>
+            </figure>
+            <h2>
+                The place I'd like to visit.
+            </h2>
+            <span>
+                I've heard good things about Caribean.
+            </span>
+            <p>
+                I've heard about good things here: 
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <address>
+                            My address: 4A Alley, Group 5, Block 3A, Trang Dai Ward, Bien Hoa City, Dong Nai Province <br>
+                            Number: +84 374 726 829 <br>
+                            Contact: <a href="https://www.notion.so/Schedule-220aaf4ff44a8050b13ce6942474637d">Facebook</a> <br>
+                        </address>
+                    </td>
+                </tr>
+            </table>
+            <h2>
+                Place I want to Avoid.
+            </h2>
+            <span>
+                Any where cold. No way!
+            </span>
+        </section>
+        <hr>
+        <form action="/index.html" method="post">
+            <label for="username"> &nbsp;Type your username:
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </label> <br>
+            <label for="password"> &nbsp;Set your password:
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="checkbox" id="showpassword" name="showpassword" onclick="togglePassword()">
+            </label> <br>
+            <label for="email"> &nbsp;Enter email: 
+                <input type= "email" id="email" name ="email" placeholder="Email" required>
+            </label> <br>
+            <label for="number"> &nbsp;Enter phone-number: 
+                <input type="number" name = "number" placeholder="Ex: 0374726829" id="number" pattern="0[0-9]{9}" required>
+            </label> <br>
+            <label for="Age">&nbsp;Type Age: 
+                <input type="number" id="Age" name="number" min="18" max="65" placeholder="Age">
+            </label>
+            <br>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="LGBT">LBGT</option>
+                <option value="Other">Other</option>
+            </select> <br>
+            <input type="file" id="file" name="avatar"> <br>
+            <label for="opinion">
+                <textarea name="opinion" id="opinion" rows="5" cols="40" placeholder="Enter your stance here..."></textarea> <br>
+            </label>
+            <input type="checkbox" name="agree" required> I agree <br>
+            <input type="submit" id="submit" name="submit" value="Submit">
+            <button type="submit" name="action" value="Post">Post</button>
+            <button type="submit" name="action" value="GetRidOf">Delete</button>
+            <button type="button" name="action" value="Troll" onclick="alert('Youre gay!!!')">Click here to get gift!!</button>
+        </form>
+    </main>
+</div>
+
     <hr>
-    <section id="Wrap_up">
-        <p>
-            &lt;&lt;&lt;&copy; Dang Thai Khang &gt;&gt;&gt;
-        </p>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <b>COLD!</b></dd>
-    
-            <dt>South Pole</dt>
-            <dd>This is also <b>COLD!</b></dd>
-    
-            <dt>Mountain Tops</dt>
-            <dd>There are also <strong>COLD!</strong></dd>
-        </dl>
-    </section>
-    <button>
-        <a href="#" id="Link1">Back to the top</a>
-    </button>
+    <footer>
+        <section id="Wrap_up">
+            <p>
+                &lt;&lt;&lt;&copy; Dang Thai Khang &gt;&gt;&gt;
+            </p>
+            <dl>
+                <dt>North Pole</dt>
+                <dd>I hear this is <b>COLD!</b></dd>
+        
+                <dt>South Pole</dt>
+                <dd>This is also <b>COLD!</b></dd>
+        
+                <dt>Mountain Tops</dt>
+                <dd>There are also <strong>COLD!</strong></dd>
+            </dl>
+        </section>
+        <button>
+            <a href="#" id="Link1">Back to the top</a>
+        </button>
+    </footer>
 </body>
-</html>
+</html
