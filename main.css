@@ -1,5 +1,5 @@
 html {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 a
@@ -62,25 +62,28 @@ button
     width: 300px;
 }
 
-label
+hr
 {
-    font-weight: bold;
-    color: darkgreen;
-    font-style: inherit;
+    border: solid;
 }
 
-#emai, #username, #password, #number, #Age
+button
 {
-    font-size: 15px;
-    color: blue;
-    font-style: oblique;
-}
-
-#submit
-{
-    font-size: large;
-    background-color: grey;
+    background-color: rgb(rgb(228, 2, 2), rgb(103, 214, 103), rgb(116, 116, 171));
     color: white;
-    font-style: italic;
+    padding: 10px 20px;
+    border: solid color(srgb 0 255 255);
+    transition: 0.3s;
 }
 
+button:hover
+{
+    background: darkblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#demo1
+{
+    user-select: none;
+}

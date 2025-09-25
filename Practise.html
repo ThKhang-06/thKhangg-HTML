@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThKhangg</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="https://dantri.com.vn/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
             </ul>
         </nav>
         <section id="Introdcution">
-            <h1>
+            <h1 id="demo1">
                 Hello World!
             </h1>
             <p>Do want to know what am I?</p>
@@ -102,43 +103,123 @@
             </span>
         </section>
         <hr>
-        <form action="/index.html" method="post">
-            <label for="username"> &nbsp;Type your username:
-                <input type="text" id="username" name="username" placeholder="Username" required>
-            </label> <br>
-            <label for="password"> &nbsp;Set your password:
-                <input type="password" id="password" name="password" placeholder="Password" required>
-                <input type="checkbox" id="showpassword" name="showpassword" onclick="togglePassword()">
-            </label> <br>
-            <label for="email"> &nbsp;Enter email: 
-                <input type= "email" id="email" name ="email" placeholder="Email" required>
-            </label> <br>
-            <label for="number"> &nbsp;Enter phone-number: 
-                <input type="number" name = "number" placeholder="Ex: 0374726829" id="number" pattern="0[0-9]{9}" required>
-            </label> <br>
-            <label for="Age">&nbsp;Type Age: 
-                <input type="number" id="Age" name="number" min="18" max="65" placeholder="Age">
-            </label>
-            <br>
-            <select name="gender" id="gender">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="LGBT">LBGT</option>
-                <option value="Other">Other</option>
-            </select> <br>
-            <input type="file" id="file" name="avatar"> <br>
-            <label for="opinion">
-                <textarea name="opinion" id="opinion" rows="5" cols="40" placeholder="Enter your stance here..."></textarea> <br>
-            </label>
-            <input type="checkbox" name="agree" required> I agree <br>
-            <input type="submit" id="submit" name="submit" value="Submit">
-            <button type="submit" name="action" value="Post">Post</button>
-            <button type="submit" name="action" value="GetRidOf">Delete</button>
-            <button type="button" name="action" value="Troll" onclick="alert('Youre gay!!!')">Click here to get gift!!</button>
+        <fieldset>
+            <Legend>Presonal Info</Legend>
+            <form action="https://httpbin.org/" method="get">
+                <label for="username"> &nbsp;Type your username:
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </label> <br>
+                <label for="password"> &nbsp;Set your password:
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <input type="checkbox" id="showpassword" name="showpassword" onclick="togglePassword()">
+                </label> <br>
+                <label for="email"> &nbsp;Enter email: 
+                    <input type= "email" id="email" name ="email" placeholder="Email" required>
+                </label> <br>
+                <label for="number"> &nbsp;Enter phone-number: 
+                    <input type="number" name = "number" placeholder="Ex: 0374726829" id="number" pattern="0[0-9]{9}" required>
+                </label> <br>
+                <label for="Age">&nbsp;Type Age: 
+                    <input type="number" id="Age" name="number" min="18" max="65" placeholder="Age">
+                </label>
+                <br>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="LGBT">LBGT</option>
+                    <option value="Other">Other</option>
+                </select> <br>
+                <input type="file" id="file" name="avatar"> <br>
+                <label for="opinion">
+                    <textarea name="opinion" id="opinion" rows="5" cols="40" placeholder="Enter your stance here..."></textarea> <br>
+                </label>
+                <input type="checkbox" name="agree" required> I agree <br>
+                <input type="submit" id="submit" name="submit" value="Submit">
+                <button type="submit" name="action" value="Post">Post</button>
+                <button type="submit" name="action" value="GetRidOf">Delete</button>
+                <button type="button" name="action" value="Troll" onclick="alert('Youre gay!!!')">Click here to get gift!!</button>
+            </form>
+        </fieldset>
+        <!-- <hr>
+        <article id="contact">
+            <h2>Contact me</h2>
+            <p>I'd really like to hear from you!</p>
+
+            <form action="https://httpbin.org/" method="post">
+                <label for="firstname">First name: </label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name"
+                    autocomplete="on" required> <br>
+                <label for="lastname">Last name: </label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your last name"
+                    autocomplete="on" required> <br>
+                <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password"
+                        autocomplete="on" required> <br>
+                <label for="phone">Phone-number: </label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone" 
+                    autocomplete="on" pattern="0[0-9]{10}" required> <br>
+                <label for="Decade">Decade-number: </label>
+                <input type="number" id="Decade" name="Decade" placeholder="Decade" 
+                    autocomplete="on" min="2000" max="2025" required> <br>
+                <label for="coffee">Favorite coffe: </label>
+                <select name="coffee" id="coffee">
+                        <optgroup label="Coffes">
+                            <option value="Regular coffee">Regular coffee</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                        </optgroup>
+                    <optgroup label="Expresso Drinks">
+                        <option value="capuchino" selected>Cappuchino</option>
+                        <option value="latte">Latte</option>
+                    </optgroup>
+                </select>
+            </form>
+        </article> -->
+        <hr>
+        <form action="https://httpbin.org/">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" placeholder="Type your name" required>
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" placeholder="Type your password" required>
+            </fieldset>
+            <fieldset>
+                <legend>More option</legend>
+                <label for="rememberlogin">Remember login <input type="checkbox" id="rememberlogin" name="rememberlogin"></label>
+                <br>
+                <label for="getnoti">Get notification <input type="checkbox" id="getnoti" name="getnoti"></label>
+            </fieldset>
+            <input type="submit" value="Click here to submit" id="submit" name="submit">
+            <fieldset>
+                <legend>Which languages do you like?</legend>
+                <input type="radio" id="html" name="languages">
+                <label for="languages">HTML</label>
+                <br>
+                <input type="radio" id="cpp" name="languages">
+                <label for="languages">CPP</label>
+                <br>
+                <input type="radio" id="python" name="languages">
+                <label for="languages">Python</label>
+                <br>
+                <input type="reset" value="Click here to reset your option">
+            </fieldset>
+            <fieldset>
+                <legend>Which languages do you like?</legend>
+                <input type="checkbox" id="html" name="languages">
+                <label for="languages">HTML</label>
+                <br>
+                <input type="checkbox" id="cpp" name="languages">
+                <label for="languages">CPP</label>
+                <br>
+                <input type="checkbox" id="python" name="languages">
+                <label for="languages">Python</label>
+                <br>
+                <input type="reset" value="Click here to reset your option">
+            </fieldset>
         </form>
     </main>
 </div>
-
     <hr>
     <footer>
         <section id="Wrap_up">
